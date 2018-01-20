@@ -43,7 +43,7 @@ npm update
 Explanation for each field:
 ```javascript
 /* Used for storage in redis so multiple coins can share the same redis instance. */
-"coin": "Sumokoin",
+"coin": "Ombre",
 
 /* Used for front-end display */
 "symbol": "SUMO",
@@ -199,7 +199,7 @@ Explanation for each field:
     "depth": 60,
     "poolFee": 1.8, //1.8% pool fee (2% total fee total including donations)
     "devDonation": 0.1, //0.1% donation to send to pool dev - only works with Monero
-    "coreDevDonation": 0.1 //0.1% donation to send to core devs - works with Bytecoin, Monero, Dashcoin, QuarazCoin, Fantoncoin, AEON, Sumokoin, OneEvilCoin
+    "coreDevDonation": 0.1 //0.1% donation to send to core devs - works with Bytecoin, Monero, Dashcoin, QuarazCoin, Fantoncoin, AEON, Ombre, OneEvilCoin
 },
 
 /* AJAX API used for front-end website. */
@@ -303,16 +303,16 @@ Explanation for each field:
 
 #### 3) Start the pool
 
-First make sure that the sumokoind and sumo-wallet-rpc daemons are running:
+First make sure that the ombred and ombre-wallet-rpc daemons are running:
 
 ```bash
-./sumokoind --detach
-./sumo-wallet-rpc --wallet-file=<wallet name> --rpc-bind-port <wallet port>
+./ombred --detach
+./ombre-wallet-rpc --wallet-file=<wallet name> --rpc-bind-port <wallet port>
 ```
 
-When both are running it's worth to make sure the sumokoind has it's blockchain
+When both are running it's worth to make sure the ombred has it's blockchain
 synced. If this is not the case your pool will show errors with "Core is busy"
-until sumokoind is synchronized.
+until ombred is synchronized.
 
 
 ```bash
@@ -402,9 +402,9 @@ the Node.js modules, and any config files that may have been changed.
 
 ### Setting up Testnet
 
-Sumokoin does have a testnet. Call daemon and simplewallet with --tesnet to connect to it.
+Ombre does have a testnet. Call daemon and simplewallet with --tesnet to connect to it.
 Downloading the testnet blockchain may still take a while to start usint testnet, so you can use this excellent
- Monero tutorial, which also applies to Sumokoin, at http://moneroexamples.github.io/private-testnet/ to set up a private testnet.
+ Monero tutorial, which also applies to Ombre, at http://moneroexamples.github.io/private-testnet/ to set up a private testnet.
 
 For cryptonote based coins that don't have a testnet mode (yet), you can effectively create a testnet with the following steps:
 

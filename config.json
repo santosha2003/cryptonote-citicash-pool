@@ -1,8 +1,8 @@
 {
-    "coin": "Sumokoin",
-    "symbol": "SUMO",
+    "coin": "Ombre",
+    "symbol": "OMB",
     "coinUnits": 1000000000,
-    "coinDifficultyTarget": 240,
+    "coinDifficultyTarget": 60,
 
     "logging": {
         "files": {
@@ -19,60 +19,57 @@
     "poolServer": {
         "enabled": true,
         "clusterForks": "auto",
-        "poolAddress": "Sumoo64zh7dRFyB8dgDWZMLmzKBgGXYWZCG4NBF2VcvzEuiSQpMjyyiYJ1Ra696pZu56PPFQNBDdB1rZjyeX1RVKeWZgHg7pTxj",
+        "poolAddress": "cashLnfXjoDie63ATqEzm5dHheJjxjpwjAJHU4AToKyL2kQ12L4mxbkNr7Uaoxh14fgGCB1mzUEyiP3KBBdXwDGA2goiR3t5cs",
         "blockRefreshInterval": 1000,
         "minerTimeout": 900,
         "sslKey": "key.pem",
         "sslCert": "cert.pem",
         "allowedMinerAddressPrefixes": [
-          "2864026", "536986"
+          "925524", "111002"
         ],
         "ports": [
             {
-                "port": 3333,
+                "port": 4444,
                 "difficulty": 2000,
                 "desc": "Low end hardware"
             },
             {
-                "port": 3334,
+                "port": 4445,
                 "difficulty": 2000,
                 "desc": "Low end hardware (SSL protected)",
                 "type": "SSL"
             },
             {
-                "port": 4444,
+                "port": 4446,
                 "difficulty": 10000,
                 "desc": "Mid range hardware"
             },
             {
-                "port": 4445,
+                "port": 4447,
                 "difficulty": 10000,
                 "desc": "Mid range hardware (SSL protected)",
                 "type": "SSL"
             },
             {
-                "port": 5555,
+                "port": 4448,
                 "difficulty": 20000,
                 "desc": "High end hardware"
             },
             {
-                "port": 5556,
+                "port": 4449,
                 "difficulty": 20000,
                 "desc": "High end hardware (SSL protected)",
                 "type": "SSL"
             },
             {
-                "port": 6666,
-                "difficulty": 30000,
-                "desc": "Hidden port",
-                "hidden": true
+                "port": 4450,
+                "difficulty": 100000,
+                "desc": "Mining rigs",
             },
             {
-                "port": 6667,
-                "difficulty": 30000,
-                "desc": "Hidden port (SSL protected)",
-                "hidden": true,
-                "type": "SSL"
+                "port": 4451,
+                "difficulty": 400000,
+                "desc": "NiceHash port",
             }
         ],
         "varDiff": {
