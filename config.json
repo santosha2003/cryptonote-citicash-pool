@@ -64,12 +64,12 @@
             {
                 "port": 4450,
                 "difficulty": 100000,
-                "desc": "Mining rigs",
+                "desc": "Mining rigs"
             },
             {
                 "port": 4451,
                 "difficulty": 400000,
-                "desc": "NiceHash port",
+                "desc": "NiceHash port"
             }
         ],
         "varDiff": {
