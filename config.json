@@ -111,7 +111,7 @@
         "useDynamicTransferFee": true,
         "transferFeePerPayee": 4000000,
         "minerPayFee": true,
-        "blockReward": 36.45
+        "blockReward": 90
     },
 
     "blockUnlocker": {
