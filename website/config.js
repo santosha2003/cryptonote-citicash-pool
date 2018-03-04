@@ -10,8 +10,8 @@ var cryptonatorWidget = ["{symbol}-BTC", "{symbol}-USD", "{symbol}-EUR"];
 
 var easyminerDownload = "https://github.com/zone117x/cryptonote-easy-miner/releases/";
 
-var blockchainExplorer = "http://explorer.ombre.com/block/{id}";
+var blockchainExplorer = "https://explorer.ombre.io/block/{id}";
 
-var transactionExplorer = "http://explorer.ombre.com/tx/{id}";
+var transactionExplorer = "https://explorer.ombre.io/tx/{id}";
 
 var themeCss = "themes/default-theme.css";
