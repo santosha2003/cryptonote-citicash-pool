@@ -303,10 +303,26 @@ Explanation for each field:
 
 #### 3) Start the pool
 
-First make sure that the ombred and ombre-wallet-rpc daemons are running:
+First make sure ombred is installed as service.
 
 ```bash
-./ombred --detach
+
+cd cryptonote-ombre-pool
+mv ombred /usr/bin
+cp ombre.service /lib/systemd/system/
+sudo systemctl daemon-reload
+sudo systemctl enable ombre
+```
+Add user so that ombred will run under a user not root
+
+```bash
+sudo useradd -m monerodaemon -d /home/monerodaemon
+
+
+Make sure that the ombred and ombre-wallet-rpc daemons are running:
+
+```bash
+sudo systemctl start ombre
 ./ombre-wallet-rpc --wallet-file=<wallet name> --rpc-bind-port <wallet port>
 ```
 
