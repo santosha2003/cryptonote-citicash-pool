@@ -1,6 +1,6 @@
 {
-    "coin": "Citicash",
-    "symbol": "CCH",
+    "coin": "Ombre",
+    "symbol": "OMB",
     "coinUnits": 1000000000,
     "coinDifficultyTarget": 60,
 
@@ -19,13 +19,13 @@
     "poolServer": {
         "enabled": true,
         "clusterForks": "auto",
-        "poolAddress": "cczJzMwby6NMYHiBegkJ26Qp3UW5HAGs5bA3nAryNiJGeQX9z9KBdp2hhXF1CrLEC9EBvefegH5wRUhsJ62NxuvX98GxyXgXgW",
+        "poolAddress": "cashKvTc8Fv4jkvARp4hHaXazcjuCZpxA54L6hdDE8P2cqszHoTwV16cHpAJpRWQHUHaVx6si2w4qWVq7JmUfr3Y8REGAV7YQL",
         "blockRefreshInterval": 1000,
         "minerTimeout": 900,
         "sslKey": "/usr/local/etc/letsencrypt/live/santoshapro.me/privkey.pem",
         "sslCert": "/usr/local/etc/letsencrypt/live/santoshapro.me/fullchain.pem",
             "allowedMinerAddressPrefixes": [ 
-          "925524", "111002", "31572" 
+          "925524", "111002" 
        ], 
         "ports": [
             {
@@ -110,12 +110,12 @@
   },
     "daemon": {
         "host": "192.168.1.62",
-        "port": 19834
+        "port": 19744
     },
 
     "wallet": {
         "host": "127.0.0.1",
-        "port": 19835
+        "port": 19745
     },
 
     "redis": {
